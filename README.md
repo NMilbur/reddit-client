@@ -1,2 +1,2 @@
 # reddit-client
-Reddit client just for funzies
+Reddit client just for funzies, nothing too crazy
