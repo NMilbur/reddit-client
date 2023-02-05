@@ -1,7 +1,22 @@
 import { Box, Container } from "@mui/material";
 import Banner from "components/Banner";
+import { ReactNode } from "react";
 
-const PageContainer = ({ children, containerProps, fullPage = false, maxWidth = "xl" }) => (
+interface PageContainerProps {
+  children: ReactNode;
+  containerProps?: any;
+  fullPage?: boolean;
+  maxWidth?: string;
+}
+
+const PageContainer = (
+  {
+    children,
+    containerProps,
+    fullPage = false,
+    maxWidth = "xl"
+  }: PageContainerProps
+) => (
   <Box
     display="flex"
     flexDirection="column"
